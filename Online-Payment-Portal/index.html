@@ -14,17 +14,17 @@
     <title>Online-Payment-Portal</title>
   </head>
   <body>
-    <header>
+    <header style="font-size: 2rem; font-weight: bold">
       <span>Your Shopping Cart</span>
     </header>
     <main>
-      <section>
-        <article>
-          <div>
+      <section class="container">
+        <article class="row">
+          <div class="col">
             <h2>Select delivery options</h2>
-            <div>
-              <div>
-                <div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col">
                   <img
                     width="100%"
                     src="images/TV_OLED.jpg"
@@ -34,7 +34,7 @@
                     <a href="#change">change</a>
                   </div>
                 </div>
-                <div>
+                <div class="col">
                   <h4>OLED TV 195 cm (77 Inch) [Model Year 2022]</h4>
                   <span>Condition:</span>
                   <div>
@@ -58,30 +58,30 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="col">
             <h2>Order Summary</h2>
-            <div>
-              <div>
-                <div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
                   <a href="#">Change delivery address</a>
                 </div>
-                <div>
+                <div class="col">
                   <span>Items Cost:</span>
                   <span>6000</span>
                 </div>
-                <div>
+                <div class="col">
                   <span>Delivery Insurance:</span>
                   <span>35</span>
                 </div>
-                <div>
+                <div class="col">
                   <span>Delivery Charges:</span>
                   <span>Free for members</span>
                 </div>
-                <span>
+                <span class="col">
                   <span>Total Purchase:</span>
                   <span>6035</span>
                 </span>
-                <div>
+                <div class="col">
                   <span>VAT:</span>
                   <span>1146 (<a href="#VAT">included</a>)</span>
                 </div>
@@ -89,49 +89,73 @@
             </div>
           </div>
         </article>
-        <div></div>
-        <article>
-          <div>
+        <div class="row" style="height: 4px"></div>
+        <article class="row">
+          <div class="col">
             <h2>Confirm payment details</h2>
-            <div>
+            <div class="container">
               <h4>Enter bank details:</h4>
               <form action="abc">
-                <div>
-                  <label for="bic">BIC (Swift-Code):</label
-                  ><input type="text" id="bic" /> <label for="iban">IBAN:</label
-                  ><input type="text" id="iban" />
-                  <label for="accholder">Account Holder's Name:</label>
-                  <input type="text" id="accholder" />
+                <div class="row">
+                  <label class="col" for="bic">BIC (Swift-Code):</label
+                  ><input class="col" type="text" id="bic" />
+                  <label class="col" for="iban">IBAN:</label
+                  ><input class="col" type="text" id="iban" />
+                  <label class="col" for="accholder"
+                    >Account Holder's Name:</label
+                  >
+                  <input class="col" type="text" id="accholder" />
                 </div>
-                <div>
-                  <input type="checkbox" id="savechk" checked />
-                  <label for="savechk"
+                <div class="row">
+                  <input class="col" type="checkbox" id="savechk" checked />
+                  <label class="col" for="savechk"
                     >Save my bank details for future purchases?</label
                   >
-                  <button>Pay</button>
+                  <button class="col">Pay</button>
                 </div>
               </form>
             </div>
           </div>
-          <div>
+          <div class="col">
             <h2>Choose payment method</h2>
-            <div>
+            <div class="container">
               <form action="xyz">
-                <div>
-                  <label for="cc"
-                    ><input name="paymentmethod" type="radio" id="cc" /> Credit
-                    Card</label
+                <div class="row">
+                  <label class="col" for="cc"
+                    ><input
+                      class="col"
+                      name="paymentmethod"
+                      type="radio"
+                      id="cc"
+                    />
+                    Credit Card</label
                   >
-                  <label for="pp"
-                    ><input name="paymentmethod" type="radio" id="pp" />
+                  <label class="col" for="pp"
+                    ><input
+                      class="col"
+                      name="paymentmethod"
+                      type="radio"
+                      id="pp"
+                    />
                     PayPal
                   </label>
-                  <label for="ba"
-                    ><input name="paymentmethod" type="radio" id="ba" checked />
+                  <label class="col" for="ba"
+                    ><input
+                      class="col"
+                      name="paymentmethod"
+                      type="radio"
+                      id="ba"
+                      checked
+                    />
                     Personal Bank Account
                   </label>
-                  <label for="bf"
-                    ><input name="paymentmethod" type="radio" id="bf" />
+                  <label class="col" for="bf"
+                    ><input
+                      class="col"
+                      name="paymentmethod"
+                      type="radio"
+                      id="bf"
+                    />
                     Bank Financing
                   </label>
                 </div>
@@ -139,7 +163,7 @@
             </div>
           </div>
         </article>
-        <div></div>
+        <div class="row" style="height: 4px"></div>
       </section>
     </main>
   </body>
