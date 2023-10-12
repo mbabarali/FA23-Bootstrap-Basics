@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Online-Payment-Portal</title>
+  </head>
+  <body>
+    <header>
+      <span>Your Shopping Cart</span>
+    </header>
+    <main>
+      <section>
+        <article>
+          <div>
+            <h2>Select delivery options</h2>
+            <div>
+              <div>
+                <div>
+                  <img
+                    width="100%"
+                    src="images/TV_OLED.jpg"
+                    alt="Product Image"
+                  />
+                  <div>
+                    <a href="#change">change</a>
+                  </div>
+                </div>
+                <div>
+                  <h4>OLED TV 195 cm (77 Inch) [Model Year 2022]</h4>
+                  <span>Condition:</span>
+                  <div>
+                    <button>Used</button>
+                    <button>Brand-new</button>
+                  </div>
+
+                  <div>Unit Price: 2000/-</div>
+
+                  <label for="qty"
+                    >Quantity:
+                    <select name="quantity" id="qty">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3" selected>3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2>Order Summary</h2>
+            <div>
+              <div>
+                <div>
+                  <a href="#">Change delivery address</a>
+                </div>
+                <div>
+                  <span>Items Cost:</span>
+                  <span>6000</span>
+                </div>
+                <div>
+                  <span>Delivery Insurance:</span>
+                  <span>35</span>
+                </div>
+                <div>
+                  <span>Delivery Charges:</span>
+                  <span>Free for members</span>
+                </div>
+                <span>
+                  <span>Total Purchase:</span>
+                  <span>6035</span>
+                </span>
+                <div>
+                  <span>VAT:</span>
+                  <span>1146 (<a href="#VAT">included</a>)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div></div>
+        <article>
+          <div>
+            <h2>Confirm payment details</h2>
+            <div>
+              <h4>Enter bank details:</h4>
+              <form action="abc">
+                <div>
+                  <label for="bic">BIC (Swift-Code):</label
+                  ><input type="text" id="bic" /> <label for="iban">IBAN:</label
+                  ><input type="text" id="iban" />
+                  <label for="accholder">Account Holder's Name:</label>
+                  <input type="text" id="accholder" />
+                </div>
+                <div>
+                  <input type="checkbox" id="savechk" checked />
+                  <label for="savechk"
+                    >Save my bank details for future purchases?</label
+                  >
+                  <button>Pay</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div>
+            <h2>Choose payment method</h2>
+            <div>
+              <form action="xyz">
+                <div>
+                  <label for="cc"
+                    ><input name="paymentmethod" type="radio" id="cc" /> Credit
+                    Card</label
+                  >
+                  <label for="pp"
+                    ><input name="paymentmethod" type="radio" id="pp" />
+                    PayPal
+                  </label>
+                  <label for="ba"
+                    ><input name="paymentmethod" type="radio" id="ba" checked />
+                    Personal Bank Account
+                  </label>
+                  <label for="bf"
+                    ><input name="paymentmethod" type="radio" id="bf" />
+                    Bank Financing
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </article>
+        <div></div>
+      </section>
+    </main>
+  </body>
+</html>
