@@ -43,7 +43,7 @@
     <main>
       <section class="container bg-light">
         <article class="row">
-          <div class="col-12 my-4">
+          <div class="col-12 my-4 col-sm-7">
             <h2>Select delivery options</h2>
             <div class="container-fluid">
               <div class="row my-4">
@@ -92,7 +92,7 @@
             </div>
           </div>
           <div
-            class="col-12 border border-dark rounded-bottom-5 bg-info-subtle my-4"
+            class="col-12 border border-dark rounded-bottom-5 bg-info-subtle my-4 col-sm"
           >
             <h2>Order Summary</h2>
             <div class="container">
@@ -159,34 +159,44 @@
         <div class="row bg-danger-subtle" style="height: 4px"></div>
         <article class="row border-bottom border-danger">
           <div
-            class="col-12 border border-dark rounded-top-5 bg-success-subtle my-4"
+            class="col-12 border border-dark rounded-top-5 bg-success-subtle my-4 col-sm-7"
           >
             <h2>Confirm payment details</h2>
             <div class="container my-4">
               <h4>Enter bank details:</h4>
               <form action="abc">
                 <div class="row form-group">
-                  <label class="col-12 mt-3" for="bic">BIC (Swift-Code):</label>
-                  <input class="col-10 mt-1 offset-1" type="text" id="bic" />
-                  <label class="col-12 mt-3" for="iban">IBAN:</label
-                  ><input class="col-10 mt-1 offset-1" type="text" id="iban" />
-                  <label class="col-12 mt-3" for="accholder"
+                  <label class="col-12 mt-3 col-sm-5" for="bic"
+                    >BIC (Swift-Code):</label
+                  >
+                  <input
+                    class="col-10 mt-1 offset-1 col-sm-6 mt-sm-3"
+                    type="text"
+                    id="bic"
+                  />
+                  <label class="col-12 mt-3 col-sm-5" for="iban">IBAN:</label
+                  ><input
+                    class="col-10 mt-1 offset-1 col-sm-6 mt-sm-3"
+                    type="text"
+                    id="iban"
+                  />
+                  <label class="col-12 mt-3 col-sm-5" for="accholder"
                     >Account Holder's Name:</label
                   >
                   <input
-                    class="col-10 mt-1 offset-1"
+                    class="col-10 mt-1 offset-1 col-sm-6 mt-sm-3"
                     type="text"
                     id="accholder"
                   />
                 </div>
                 <div class="row form-group my-5">
                   <input
-                    class="col-3 offset-1 w-auto"
+                    class="col-3 offset-1 w-auto col-sm-2"
                     type="checkbox"
                     id="savechk"
                     checked
                   />
-                  <label class="col-8" for="savechk"
+                  <label class="col-8 col-sm" for="savechk"
                     >Save my bank details for future purchases?</label
                   >
                   <button class="col-8 btn btn-warning offset-2 mt-3">
@@ -196,7 +206,7 @@
               </form>
             </div>
           </div>
-          <div class="col-12 my-4">
+          <div class="col-12 my-4 col-sm-5">
             <h2>Choose payment method</h2>
             <div class="container my-4">
               <form action="xyz">
