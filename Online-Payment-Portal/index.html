@@ -58,8 +58,10 @@
                   <h4>OLED TV 195 cm (77 Inch) [Model Year 2022]</h4>
                   <span>Condition:</span>
                   <div>
-                    <button>Used</button>
-                    <button>Brand-new</button>
+                    <button class="btn btn-outline-primary btn-sm">Used</button>
+                    <button class="btn btn-outline-success btn-sm">
+                      Brand-new
+                    </button>
                   </div>
 
                   <div>
@@ -68,7 +70,11 @@
 
                   <label for="qty"
                     >Quantity:
-                    <select name="quantity" id="qty">
+                    <select
+                      class="btn btn-secondary btn-sm"
+                      name="quantity"
+                      id="qty"
+                    >
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3" selected>3</option>
@@ -85,7 +91,9 @@
             <div class="container">
               <div class="row">
                 <div class="col">
-                  <a href="#">Change delivery address</a>
+                  <a href="#" role="button" class="btn btn-info"
+                    >Change delivery address</a
+                  >
                 </div>
                 <div class="col">
                   <span>Items Cost:</span>
@@ -137,7 +145,7 @@
                   <label class="col" for="savechk"
                     >Save my bank details for future purchases?</label
                   >
-                  <button class="col">
+                  <button class="col btn btn-warning">
                     <i class="bi bi-cash-coin"></i> Pay
                   </button>
                 </div>
