@@ -38,41 +38,43 @@
       style="font-size: 2rem; font-weight: bold"
     >
       <span>Your Shopping Cart</span>
-      <i class="bi bi-cart-check-fill"></i>
+      <i class="bi bi-cart-check-fill mx-4"></i>
     </header>
     <main>
       <section class="container bg-light">
         <article class="row">
-          <div class="col">
+          <div class="col my-4">
             <h2>Select delivery options</h2>
             <div class="container-fluid">
-              <div class="row">
+              <div class="row my-4">
                 <div class="col">
                   <img
                     width="100%"
                     src="images/TV_OLED.jpg"
                     alt="Product Image"
                   />
-                  <div>
+                  <div class="m-auto" style="max-width: max-content">
                     <a href="#change">change</a>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col m-0 p-0">
                   <h4>OLED TV 195 cm (77 Inch) [Model Year 2022]</h4>
-                  <span>Condition:</span>
-                  <div>
-                    <button class="btn btn-outline-primary btn-sm">Used</button>
-                    <button class="btn btn-outline-success btn-sm">
+                  <div class="my-1">
+                    <span>Condition:</span>
+                    <button class="btn btn-outline-primary btn-sm m-2">
+                      Used
+                    </button>
+                    <button class="btn btn-outline-success btn-sm m-2">
                       Brand-new
                     </button>
                   </div>
 
-                  <div>
+                  <div class="my-1">
                     Unit Price: <i class="bi bi-currency-euro"></i>2000/-
                   </div>
 
-                  <label for="qty"
-                    >Quantity:
+                  <label for="qty" class="my-1">
+                    Quantity:
                     <select
                       class="btn btn-secondary btn-sm"
                       name="quantity"
@@ -89,11 +91,13 @@
               </div>
             </div>
           </div>
-          <div class="col border border-dark rounded-bottom-5 bg-info-subtle">
+          <div
+            class="col border border-dark rounded-bottom-5 bg-info-subtle my-4"
+          >
             <h2>Order Summary</h2>
             <div class="container">
-              <div class="row">
-                <div class="col">
+              <div class="row p-0 m-0">
+                <div class="col my-3">
                   <a href="#" role="button" class="btn btn-info"
                     >Change delivery address</a
                   >
@@ -104,7 +108,7 @@
                 </div>
                 <div class="col">
                   <span>Delivery Insurance:</span>
-                  <span><i class="bi bi-currency-euro"></i>35</span>
+                  <span><i class="bi bi-currency-euro offset-2"></i>35</span>
                 </div>
                 <div class="col border-bottom border-info">
                   <span>Delivery Charges:</span>
@@ -112,32 +116,33 @@
                 </div>
                 <span class="col">
                   <span>Total Purchase:</span>
-                  <span><i class="bi bi-currency-euro"></i>6035</span>
+                  <span><i class="bi bi-currency-euro offset-2"></i>6035</span>
                 </span>
                 <div class="col">
                   <span>VAT:</span>
                   <span
-                    ><i class="bi bi-currency-euro"></i>1146 (<a href="#VAT"
+                    ><i class="bi bi-currency-euro offset-2"></i>1146 (<a
+                      href="#VAT"
                       >included</a
                     >)</span
                   >
                 </div>
                 <!-- <div class="col d-flex flex-column">
                   <div class="col">Items Cost:</div>
-                  <div class="col"></div>
+                  <div class="col offset-2"></div>
                     <i class="bi bi-currency-euro"></i>6000
                   </div>
                   <div class="col">Delivery Insurance:</div>
-                  <div class="col">
+                  <div class="col offset-2">
                     <i class="bi bi-currency-euro"></i>35
                   </div>
                   <div class="col">Delivery Charges:</div>
-                  <div class="col">Free for members</div>
+                  <div class="col offset-2">Free for members</div>
                   <div class="col">Total Purchase:</div>
-                  <div class="col">
+                  <div class="col offset-2">
                     <i class="bi bi-currency-euro"></i>6035
                   </div>
-                  <div class="col">
+                  <div class="col offset-2">
                     VAT: <i class="bi bi-currency-euro"></i>1146
                     <a href="#VAT">(included)</a>
                   </div>
@@ -148,80 +153,96 @@
         </article>
         <div class="row bg-danger-subtle" style="height: 4px"></div>
         <article class="row border-bottom border-danger">
-          <div class="col border border-dark rounded-top-5 bg-success-subtle">
+          <div
+            class="col border border-dark rounded-top-5 bg-success-subtle my-4"
+          >
             <h2>Confirm payment details</h2>
-            <div class="container">
+            <div class="container my-4">
               <h4>Enter bank details:</h4>
               <form action="abc">
                 <div class="row form-group">
-                  <label class="col" for="bic">BIC (Swift-Code):</label
-                  ><input class="col" type="text" id="bic" />
-                  <label class="col" for="iban">IBAN:</label
-                  ><input class="col" type="text" id="iban" />
-                  <label class="col" for="accholder"
+                  <label class="col mt-3" for="bic">BIC (Swift-Code):</label>
+                  <input class="col mt-3 offset-1" type="text" id="bic" />
+                  <label class="col mt-3" for="iban">IBAN:</label
+                  ><input class="col mt-3 offset-1" type="text" id="iban" />
+                  <label class="col mt-3" for="accholder"
                     >Account Holder's Name:</label
                   >
-                  <input class="col" type="text" id="accholder" />
+                  <input class="col mt-3 offset-1" type="text" id="accholder" />
                 </div>
-                <div class="row form-group">
-                  <input class="col" type="checkbox" id="savechk" checked />
+                <div class="row form-group my-5">
+                  <input
+                    class="col offset-1 w-auto"
+                    type="checkbox"
+                    id="savechk"
+                    checked
+                  />
                   <label class="col" for="savechk"
                     >Save my bank details for future purchases?</label
                   >
-                  <button class="col btn btn-warning">
+                  <button class="col btn btn-warning offset-2 mt-3">
                     <i class="bi bi-cash-coin"></i> Pay
                   </button>
                 </div>
               </form>
             </div>
           </div>
-          <div class="col">
+          <div class="col my-4">
             <h2>Choose payment method</h2>
-            <div class="container">
+            <div class="container my-4">
               <form action="xyz">
                 <div class="row form-group d-flex flex-column">
-                  <label class="col" for="cc"
+                  <label class="col my-1" for="cc"
                     ><input
-                      class="col"
+                      class="col my-1"
                       name="paymentmethod"
                       type="radio"
                       id="cc"
                     />
                     <i
-                      class="bi bi-credit-card-2-front"
+                      class="bi bi-credit-card-2-front offset-1 me-1"
                       style="color: purple"
                     ></i>
                     Credit Card</label
                   >
-                  <label class="col" for="pp"
+                  <label class="col my-1" for="pp"
                     ><input
-                      class="col"
+                      class="col my-1"
                       name="paymentmethod"
                       type="radio"
                       id="pp"
                     />
-                    <i class="bi bi-paypal" style="color: blue"></i>
+                    <i
+                      class="bi bi-paypal offset-1 me-1"
+                      style="color: blue"
+                    ></i>
                     PayPal
                   </label>
-                  <label class="col" for="ba"
+                  <label class="col my-1" for="ba"
                     ><input
-                      class="col"
+                      class="col my-1"
                       name="paymentmethod"
                       type="radio"
                       id="ba"
                       checked
                     />
-                    <i class="bi bi-bank" style="color: green"></i>
+                    <i
+                      class="bi bi-bank offset-1 me-1"
+                      style="color: green"
+                    ></i>
                     Personal Bank Account
                   </label>
-                  <label class="col" for="bf"
+                  <label class="col my-1" for="bf"
                     ><input
-                      class="col"
+                      class="col my-1"
                       name="paymentmethod"
                       type="radio"
                       id="bf"
                     />
-                    <i class="bi bi-coin" style="color: orangered"></i>
+                    <i
+                      class="bi bi-coin offset-1 me-1"
+                      style="color: orangered"
+                    ></i>
                     Bank Financing
                   </label>
                 </div>
