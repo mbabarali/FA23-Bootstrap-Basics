@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
 
     <!-- ------------------------------------------------- -->
     <!-- Google Fonts -->
@@ -31,6 +35,7 @@
   <body>
     <header class="bg-warning" style="font-size: 2rem; font-weight: bold">
       <span>Your Shopping Cart</span>
+      <i class="bi bi-cart-check-fill"></i>
     </header>
     <main>
       <section class="container bg-light">
@@ -57,7 +62,9 @@
                     <button>Brand-new</button>
                   </div>
 
-                  <div>Unit Price: 2000/-</div>
+                  <div>
+                    Unit Price: <i class="bi bi-currency-euro"></i>2000/-
+                  </div>
 
                   <label for="qty"
                     >Quantity:
@@ -82,11 +89,11 @@
                 </div>
                 <div class="col">
                   <span>Items Cost:</span>
-                  <span>6000</span>
+                  <span><i class="bi bi-currency-euro"></i>6000</span>
                 </div>
                 <div class="col">
                   <span>Delivery Insurance:</span>
-                  <span>35</span>
+                  <span><i class="bi bi-currency-euro"></i>35</span>
                 </div>
                 <div class="col border-bottom border-info">
                   <span>Delivery Charges:</span>
@@ -94,11 +101,15 @@
                 </div>
                 <span class="col">
                   <span>Total Purchase:</span>
-                  <span>6035</span>
+                  <span><i class="bi bi-currency-euro"></i>6035</span>
                 </span>
                 <div class="col">
                   <span>VAT:</span>
-                  <span>1146 (<a href="#VAT">included</a>)</span>
+                  <span
+                    ><i class="bi bi-currency-euro"></i>1146 (<a href="#VAT"
+                      >included</a
+                    >)</span
+                  >
                 </div>
               </div>
             </div>
@@ -126,7 +137,9 @@
                   <label class="col" for="savechk"
                     >Save my bank details for future purchases?</label
                   >
-                  <button class="col">Pay</button>
+                  <button class="col">
+                    <i class="bi bi-cash-coin"></i> Pay
+                  </button>
                 </div>
               </form>
             </div>
@@ -143,6 +156,10 @@
                       type="radio"
                       id="cc"
                     />
+                    <i
+                      class="bi bi-credit-card-2-front"
+                      style="color: purple"
+                    ></i>
                     Credit Card</label
                   >
                   <label class="col" for="pp"
@@ -152,6 +169,7 @@
                       type="radio"
                       id="pp"
                     />
+                    <i class="bi bi-paypal" style="color: blue"></i>
                     PayPal
                   </label>
                   <label class="col" for="ba"
@@ -162,6 +180,7 @@
                       id="ba"
                       checked
                     />
+                    <i class="bi bi-bank" style="color: green"></i>
                     Personal Bank Account
                   </label>
                   <label class="col" for="bf"
@@ -171,6 +190,7 @@
                       type="radio"
                       id="bf"
                     />
+                    <i class="bi bi-coin" style="color: orangered"></i>
                     Bank Financing
                   </label>
                 </div>
