@@ -33,7 +33,10 @@
     <title>Online-Payment-Portal</title>
   </head>
   <body>
-    <header class="bg-warning" style="font-size: 2rem; font-weight: bold">
+    <header
+      class="bg-warning d-flex justify-content-end"
+      style="font-size: 2rem; font-weight: bold"
+    >
       <span>Your Shopping Cart</span>
       <i class="bi bi-cart-check-fill"></i>
     </header>
@@ -119,6 +122,26 @@
                     >)</span
                   >
                 </div>
+                <!-- <div class="col d-flex flex-column">
+                  <div class="col">Items Cost:</div>
+                  <div class="col"></div>
+                    <i class="bi bi-currency-euro"></i>6000
+                  </div>
+                  <div class="col">Delivery Insurance:</div>
+                  <div class="col">
+                    <i class="bi bi-currency-euro"></i>35
+                  </div>
+                  <div class="col">Delivery Charges:</div>
+                  <div class="col">Free for members</div>
+                  <div class="col">Total Purchase:</div>
+                  <div class="col">
+                    <i class="bi bi-currency-euro"></i>6035
+                  </div>
+                  <div class="col">
+                    VAT: <i class="bi bi-currency-euro"></i>1146
+                    <a href="#VAT">(included)</a>
+                  </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -156,7 +179,7 @@
             <h2>Choose payment method</h2>
             <div class="container">
               <form action="xyz">
-                <div class="row form-group">
+                <div class="row form-group d-flex flex-column">
                   <label class="col" for="cc"
                     ><input
                       class="col"
