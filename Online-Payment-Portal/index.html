@@ -33,10 +33,7 @@
     <title>Online-Payment-Portal</title>
   </head>
   <body>
-    <header
-      class="bg-warning d-flex justify-content-end"
-      style="font-size: 2rem; font-weight: bold"
-    >
+    <header class="bg-warning d-flex justify-content-end fs-1 fw-bold">
       <span>Your Shopping Cart</span>
       <i class="bi bi-cart-check-fill mx-4"></i>
     </header>
@@ -60,13 +57,15 @@
                 <div class="col-12 col-md m-0 p-0">
                   <h4>OLED TV 195 cm (77 Inch) [Model Year 2022]</h4>
                   <div class="my-1">
-                    <span>Condition:</span>
-                    <button class="btn btn-outline-primary btn-sm m-2">
-                      Used
-                    </button>
-                    <button class="btn btn-outline-success btn-sm m-2">
-                      Brand-new
-                    </button>
+                    <span>Choose Condition:</span>
+                    <div class="offset-3">
+                      <button class="btn btn-outline-primary btn-sm m-2 active">
+                        Used
+                      </button>
+                      <button class="btn btn-outline-success btn-sm m-2">
+                        Brand-new
+                      </button>
+                    </div>
                   </div>
 
                   <div class="my-1">
@@ -74,7 +73,7 @@
                   </div>
 
                   <label for="qty" class="my-1">
-                    Quantity:
+                    Choose Quantity:
                     <select
                       class="btn btn-secondary btn-sm"
                       name="quantity"
@@ -122,7 +121,7 @@
                   >
                 </div>
                 <div
-                  class="col-12 border-bottom border-info d-flex flex-column flex-lg-row justify-content-lg-between"
+                  class="col-12 border-bottom border-info d-flex flex-column flex-lg-row justify-content-lg-between pb-3"
                 >
                   <span>Delivery Charges:</span>
                   <span class="offset-2 offset-lg-0">Free for members</span>
@@ -160,7 +159,7 @@
                   <i class="bi bi-currency-euro offset-2 offset-lg-0"></i>35
                 </div>
                 <span class="col-12 col-lg-6">Delivery Charges:</span>
-                <div class="col-12 offset-2 col-lg-6 offset-lg-0">
+                <div class="col-12 offset-2 col-lg-6 offset-lg-0 pb-3">
                   Free for members
                 </div>
                 <div class="col-12 border-bottom border-info"></div>
@@ -220,7 +219,7 @@
                     id="savechk"
                     checked
                   />
-                  <label class="col-8 col-sm" for="savechk"
+                  <label class="col-9 col-sm" for="savechk"
                     >Save my bank details for future purchases?</label
                   >
                   <button class="col-8 btn btn-warning offset-2 mt-3">
